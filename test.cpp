@@ -5,7 +5,7 @@
 #include "./paillier.h"
 
 int main() {
-    Paillier paillier(10, true);
+    Paillier paillier(1024, false);
     paillier.keygen();
     mpz_t m, m2, c;
     mpz_inits(m, c, NULL);
